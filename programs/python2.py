@@ -32,7 +32,10 @@ import random
 
 
 def one(string):
-    return
+    outcome =''
+    for i in string:
+        outcome += i * 3
+    return outcome
 
     # <QUESTION 2>
 
@@ -51,7 +54,13 @@ def one(string):
 
 
 def two(num):
-    return
+    outcome = True
+    if num % 1 == 0 and num % num == 0:
+        outcome = True
+        return outcome
+    else:
+        outcome = False
+        return outcome
 
     # <QUESTION 3>
 
