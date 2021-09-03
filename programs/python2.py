@@ -133,9 +133,8 @@ def four(string1, string2):
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
 
-import random
 def five():
-    list1 = [random.randint(100,200) for i in range(1 ,5) if i %2 ==0]
+    list1 = [random.randint(100,200) for i in range(1 ,5) if i %2 == 0]
     return list1
 
     # <QUESTION 6>
@@ -156,7 +155,13 @@ def five():
 
 
 def six(string):
-    return
+    test = 'py'
+    if string [-2:] == test:
+        bool = True
+        return bool
+    else:
+        bool = False
+        return bool
 
     # <QUESTION 7>
 
