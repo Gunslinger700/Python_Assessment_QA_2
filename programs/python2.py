@@ -54,8 +54,7 @@ def one(string):
 
 
 def two(num):
-    outcome = True
-    if num % 1 == 0 and num % num == 0:
+    if num / 1 == num and num / num == 1:
         outcome = True
         return outcome
     else:
@@ -78,7 +77,14 @@ def two(num):
 
 
 def three(a):
-    return
+    b= int(a)
+    total = 0
+    n = 0
+    for i in range(1,b+1):
+        n = b * b
+        total = total + n
+    return total
+
 
     # <QUESTION 4>
 
@@ -108,7 +114,10 @@ def three(a):
 
 
 def four(string1, string2):
-    return
+    result = ''
+    for i,j in zip(string1, string2):
+        result += i + j
+    return result
 
     # <QUESTION 5>
 
@@ -124,9 +133,10 @@ def four(string1, string2):
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
 
-
+import random
 def five():
-    return
+    list1 = [random.randint(100,200) for i in range(1 ,5) if i %2 ==0]
+    return list1
 
     # <QUESTION 6>
 
